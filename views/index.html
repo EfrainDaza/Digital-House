@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--hojas de estilos-->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/loader.css">
+    <!--hojas de fuentes e iconos-->
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/dmsans/dmsans.css">
+    <title>BI | masajes</title>
+</head>
+<body>
+    <div class="layout">
+
+        <!--navbar escritorio-->
+        <section class="layout__nav">
+
+            <!--logo-->
+            <header class="layout__header">
+                <div class="header__logo">
+
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="/assets/img/logo.png" alt="logo">
+                    </a>
+                
+                </div>
+            </header>
+            <!--menu escritorio-->
+            <nav class="nav__navbar">
+                
+                <ul class="navbar__list">
+
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">servicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">profesionales</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">ubicacion</a>
+                    </li>
+                    
+                </ul>
+
+            </nav>
+
+        </section>
+        <!--banner-->
+        <section class="layout__banner">
+
+            <header class="banner__header">
+                <h1 class="header__title-banner">masajes <br> descontracturante</h1>
+
+                <div class="conteiner__banner">
+                    <button class="header__btn-banner" > <a class="header__link-banner" href="#">turnos!</a></button>
+                
+                    <p class="header__descriptions-banner"> tomate un poco de tiempo <br> para ti</p>
+                </div>
+              
+            </header>
+
+        </section>
+        <!--seccion servicio-->
+        <section class="layout__services">
+
+            <header class="service__header">
+                <h2 class="header__title-services">ofrecemos una <br> amplia <br> seleccion de <br> servicos de masajes </h2>
+                <p class="header__description1-services">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ea error laudantium aspernatur fugiat placeat vel possimus iusto nulla dolores voluptatibus a 
+                    commodi quaerat delectus, eius blanditiis expedita suscipit nemo atque?
+                </p>
+                <p class="header__description2-services">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ea error laudantium aspernatur fugiat placeat vel possimus iusto nulla dolores voluptatibus a 
+                    commodi quaerat delectus, eius blanditiis expedita suscipit nemo atque?
+                </p>
+            </header>
+            <main>
+                <div class="services__list">
+                    <!--botones de service-->
+                    <article class="services__service">
+    
+                        <div class="service__container-img">
+                            <a href="#" class="service__img-link">
+                                <img class="service__img" src="/assets/img/services.png" alt="imagen servicio">
+                            </a>
+                            
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    <button onclick="selectCategory(1)"  class="service__link ">descontracturante</button>
+                                </h3>
+                            </div>
+                        </div>
+    
+                    </article>
+                    <article class="services__service">
+    
+                        <div class="service__container-img">
+                            <img class="service__img" src="/assets/img/services.png" alt="imagen servicio">
+                            <div class="service__content">
+                                <h3 class="service__title ">
+                                    <button onclick="selectCategory(2)"  class="service__link ">relajante</button>
+                                </h3>
+                            </div>
+                        </div>
+    
+                    </article>
+                    <article class="services__service">
+    
+                        <div class="service__container-img">
+                            <img class="service__img" src="/assets/img/services.png" alt="imagen servicio">
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    <button onclick="selectCategory(3)"  class="service__link">metamorfico</button>
+                                </h3>
+                            </div>
+                        </div>
+                        
+    
+                    </article>
+                    <article class="services__service">
+    
+                        <div class="service__container-img">
+                            <img class="service__img" src="/assets/img/services.png" alt="imagen servicio">
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    <button onclick="selectCategory(4)" class="service__link">arcturiana</button>
+                                </h3>
+                            </div>
+                        </div>
+                        
+    
+                    </article>
+                    <article class="services__service">
+    
+                        <div class="service__container-img">
+                            <img class="service__img" src="/assets/img/services.png" alt="imagen servicio">
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    <button onclick="selectCategory(5)" class="service__link">combo</button>
+                                </h3>
+                            </div>
+                        </div>
+                       
+    
+                    </article>
+    
+                </div>
+    
+                <div class="service__items">
+                    <!--lista de submenu-->
+                    <aside class=" service__aside">
+                        <ul class="service__list " >
+                            <li class="service__item " onclick="selectInformation(1)" >espalda y cuello</li>
+                            <li class="service__item "  onclick="selectInformation(2)">pies</li>
+                            <li class="service__item " onclick="selectInformation(3)" >completos</li>
+                            <li class="service__item " onclick="selectInformation(4)" >espalda y cuello</li>
+                            <li class="service__item " onclick="selectInformation(5)" >pies</li>
+                            <li class="service__item " onclick="selectInformation(6)">completos</li>
+                            <li class="service__item " onclick="selectInformation(7)">tecnica metaformica</li>
+                            <li class="service__item " onclick="selectInformation(8)" >tecnica arcturiana</li>
+                            <li class="service__item " onclick="selectInformation(9)" >renovacion profunda</li>
+                            <li class="service__item " onclick="selectInformation(10)" >serenidad transformadora</li>
+                            <li class="service__item " onclick="selectInformation(11)">cambio cosmicos</li>
+                            <li class="service__item " onclick="selectInformation(12)" >paz estelares</li>
+                        </ul>
+                    </aside>
+                    <!--items de cada submenu y description-->
+                    <div class="lateral__service">
+                        <article class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">descontracturante - espalda y cuello</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs</p>
+                                        <p class="header__price-submenu">precio: $5.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">descontracturante - pie</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs</p>
+                                        <p class="header__price-submenu">precio: $5.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">descontracturante - completos</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 2hrs</p>
+                                        <p class="header__price-submenu">precio: $10.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">relajante - espalda y cuello</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs</p>
+                                        <p class="header__price-submenu">precio: $5.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">relajante - pies</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs</p>
+                                        <p class="header__price-submenu">precio: $5.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">relajante - completos</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 2hrs</p>
+                                        <p class="header__price-submenu">precio: $10.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">tecnica metaformica</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs. 30,min.</p>
+                                        <p class="header__price-submenu">precio: $7.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">tecnica arcturiana</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs. 30min.</p>
+                                        <p class="header__price-submenu">precio: $7.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">renovacion profunda</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs. 30min.</p>
+                                        <p class="header__price-submenu">precio: $7.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">serenidad transformadora</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs. 30min.</p>
+                                        <p class="header__price-submenu">precio: $7.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article  class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">cambio cosmicos</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                        harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                        magni consequatur excepturi recusandae corporis.</p>
+                                        <p class="header__time-submenu">tiempo: 1hrs. 30min.</p>
+                                        <p class="header__price-submenu">precio: $7.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+        
+                        <article class="service__list-detalles">
+                            <header class="header__list-detalles">
+                                <h4 class="header__title-submenu">paz estelares</h4>
+                                <div class="border__header">
+                                    <p class="header__description-submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Eligendi doloremque ut, commodi fugiat optio ad reiciendis eveniet 
+                                harum quae aspernatur quas praesentium dolorum voluptatem laudantium 
+                                magni consequatur excepturi recusandae corporis.</p>
+                                <p class="header__time-submenu">tiempo: 1hrs. 30min.</p>
+                                <p class="header__price-submenu">precio: $7.000</p>
+                                </div>
+                                
+                            </header>
+                            <div class="conteiner__img-submenu">
+                                <img class="submenu__img" src="/assets/img/detalleService.png" alt="detalleService">
+                            </div>
+        
+                        </article>
+                    </div>
+                   
+                </div>
+    
+            </main>
+          
+        </section>
+        <!--seccion profesionales-->
+        <section class="layout__professional">
+
+            <header class="professional__header">
+
+                <h2 class="header__title-professional">nuestros <br> masajistas <br> de la piel </h2>
+                <p class="header__description1-professional">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ea error laudantium aspernatur fugiat placeat vel possimus iusto nulla dolores voluptatibus a 
+                    commodi quaerat delectus, eius blanditiis expedita suscipit nemo atque?
+                </p>
+
+            </header>
+
+            <div class="conteiner__professional">
+                
+                <article class="article__professional">
+                    <div class="conteiner__professional-img"> 
+                        <img class="professional__img" src="/assets/img/professional.jpg" alt="">
+                    </div>
+                    <div class="conteiner__professional-detalle">
+                        <p class="descritpion__professional">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis 
+                            nam numquam nemo sed minus, minima molestiae incidunt laudantium 
+                            libero, eveniet, illum delectus dolorem facere. Deleniti soluta 
+                            enim quo explicabo illo."</p>
+                        <h5 class="title__professional">nat REynaldo</h5>
+                    </div>
+                </article>
+                <article class="article__professional">
+                    <div class="conteiner__professional-img"> 
+                        <img class="professional__img" src="/assets/img/professional.jpg" alt="">
+                    </div>
+                    <div class="conteiner__professional-detalle">
+                        <p class="descritpion__professional">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis 
+                            nam numquam nemo sed minus, minima molestiae incidunt laudantium 
+                            libero, eveniet, illum delectus dolorem facere. Deleniti soluta 
+                            enim quo explicabo illo."</p>
+                        <h5 class="title__professional">betie norton</h5>
+                    </div>
+                </article>
+                <article class="article__professional">
+                    <div class="conteiner__professional-img"> 
+                        <img class="professional__img" src="/assets/img/professional.jpg" alt="">
+                    </div>
+                    <div class="conteiner__professional-detalle">
+                        <p class="descritpion__professional">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis 
+                            nam numquam nemo sed minus, minima molestiae incidunt laudantium 
+                            libero, eveniet, illum delectus dolorem facere. Deleniti soluta 
+                            enim quo explicabo illo."</p>
+                        <h5 class="title__professional">mattie smith</h5>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--seccion fotos-->
+        <section class="layout__gallery">
+
+            <header class="gallery__header">
+
+                <h2 class="header__title-gallery">imagenes <br> de nuestro <br> trabajos </h2>
+                <p class="header__description1-gallery">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ea error laudantium aspernatur fugiat placeat vel possimus iusto nulla dolores voluptatibus a 
+                    commodi quaerat delectus, eius blanditiis expedita suscipit nemo atque?
+                </p>
+
+            </header>
+
+            <div class="conteiner__gallery">
+
+                <div class="gallery">
+                    <img src="/assets/img/galeria1.png" alt="Imagen 1" class="gallery__img" onclick="openModal('/assets/img/galeria1.png')">
+                    <img src="/assets/img/galeria2.png" alt="Imagen 2" class="gallery__img" onclick="openModal('/assets/img/galeria2.png')">
+                    <img src="/assets/img/galeria3.png" alt="Imagen 3" class="gallery__img" onclick="openModal('/assets/img/galeria3.png')">
+                    <img src="/assets/img/galeria4.png" alt="Imagen 4" class="gallery__img" onclick="openModal('/assets/img/galeria4.png')">
+                </div>
+                
+                <div id="gallery__my-ventana" class="gallery__ventana">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="ventana__content" id="ventana__img">
+                </div>
+
+            </div>
+
+        </section>
+        
+        <!--seccion ubicacion-->
+        <section class="layout__location">
+
+            <header class="location__header">
+
+                <h2 class="header__title-location">ubicacion <br> de nuestro <br> centro </h2>
+                <p class="header__description1-location">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ea error laudantium aspernatur fugiat placeat vel possimus iusto nulla dolores voluptatibus a 
+                    commodi quaerat delectus, eius blanditiis expedita suscipit nemo atque?
+                </p>
+
+            </header>
+
+            <div class="conteiner__location">
+
+                <div class="location__google" id="load-iframe-map">
+                    
+                    <span class="loader"></span>
+                    
+                </div>
+
+                <div class="location__message">
+
+                    <form class="form__message" action="">
+
+                        <div class="conteiner___form-message">
+
+                            <section class="form__message-left">
+
+                                <div class="form__group">
+                                    <label class="form__label" for="nombre">nombre:</label>
+                                    <input class="form__input" type="text" name="nombre" required >
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="email">email:</label>
+                                    <input class="form__input" type="email" name="email" required >
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="asunto">asunto:</label>
+                                    <input class="form__input" type="text" name="asunto" required >
+                                </div>
+    
+                            </section>
+                            <section class="form__message-rigth">
+    
+                                <div class="form__group--textarea">
+                                    <label class="form__label--textarea" for="mensaje:">mensaje:</label>
+                                    <textarea class="form__textarea" name="mensaje"  required ></textarea>
+                                </div>
+                               
+                            </section>
+
+                        </div>
+
+                        <div class="conteiner__btn-message">
+                            <button type="submit" class="btn__message">enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--footer-->
+        <footer class="layout__footer">
+            
+
+            <div class="container__footer">
+
+                <div class="footer__left">
+                    
+                    <nav class="navbar__footer">
+                
+                        <ul class="navbarf__list">
+        
+                            <li class="navbarf__item">
+                                <a class="navbarf__link" href="#">home</a>
+                            </li>
+                            <li class="navbarf__item">
+                                <a class="navbarf__link" href="#">servicio</a>
+                            </li>
+                            <li class="navbarf__item">
+                                <a class="navbarf__link" href="#">profesionales</a>
+                            </li>
+                            <li class="navbarf__item">
+                                <a class="navbarf__link" href="#">ubicacion</a>
+                            </li>
+                            
+                        </ul>
+        
+                    </nav>
+
+                </div>
+                <div class="footer__center">
+
+                    <div class="logo__footer">
+
+                        <a class="logof__link" href="#">
+                            <img class="logof__img" src="/assets/img/logo.png" alt="logo">
+                        </a>
+                    
+                    </div>
+
+                </div>
+                <div class="footer__rigth">
+                    
+                    <div class="socials__footer">
+                
+                        <ul class="socailasf__list">
+        
+                            <li class="socialf__item">
+                                <a class="socialf__link" href="#"><i class="fa-brands fa-instagram social__iconsf"></i></a>
+                            </li>
+
+                        </ul>
+                        <ul class="socailasf__list">
+        
+                            <li class="socialf__item">
+                                <a class="socialf__link" href="#"><i class="fa-brands fa-square-facebook social__iconsf"></i></a>
+                            </li>
+
+                        </ul>
+                        <ul class="socailasf__list">
+        
+                            <li class="socialf__item">
+                                <a class="socialf__link" href="#"><i class="fa-brands fa-square-twitter social__iconsf"></i></a>
+                            </li>
+
+                        </ul>
+        
+                    </div>
+                </div>
+
+            </div>
+            <section class="footer__description">
+                <div class="footer__text">
+                    &copy; Copyright 2024. Todos los derechos reservados a Daza Efrain 
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="/assets/js/categorys.js"></script>
+    <script src="/assets/js/map.js"></script>
+    <script src="/assets/js/galery.js"></script>
+</body>
+</html>
+
